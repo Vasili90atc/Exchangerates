@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
-	static ArrayList<RateCalculator> lista; // einai mia ArrayList pou periexei antikeimena tou CountryRate h opoia
+	static ArrayList<CountryRate> lista; // einai mia ArrayList pou periexei antikeimena tou CountryRate h opoia
 	// onomazetai lista.prosvasimo apo olous stin klasi
 
 	public static void main(String[] args) {
@@ -71,7 +71,7 @@ public class App {
 					continue;// sunexizei me tin epomeni epanalispi
 				}
 
-				RateCalculator rc = new RateCalculator();// dimiourgei ena antikeimeno tou tupou CountryRate
+				CountryRate rc = new CountryRate();// dimiourgei ena antikeimeno tou tupou CountryRate
 				rc.setCountry(word[1]);// tin xwra pou exei vrei tin vazei mesa sto antikeimeno
 				rc.setYear(word[0].split("-")[0]);// tin imerominia pou exei vrei tin vazei mesa sto antikeimeno
 

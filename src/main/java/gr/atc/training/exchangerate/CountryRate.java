@@ -1,6 +1,6 @@
 package gr.atc.training.exchangerate;
 
-public class RateCalculator {
+public class CountryRate {
 
 	private String country;
 	private String year;
@@ -11,13 +11,13 @@ public class RateCalculator {
 		year = " ";
 	}
 
-	public RateCalculator(String year, String country, double rate) {
+	public CountryRate(String year, String country, double rate) {
 		this.country = country;
 		this.year = year;
 		this.rate = rate;
 	}
 
-	public RateCalculator() {
+	public CountryRate() {
 		// TODO Auto-generated constructor stub
 	}
 
