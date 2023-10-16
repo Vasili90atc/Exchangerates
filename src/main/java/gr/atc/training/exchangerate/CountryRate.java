@@ -2,46 +2,42 @@ package gr.atc.training.exchangerate;
 
 public class CountryRate {
 
-	private String country;
-	private String year;
-	private double rate;
 
-	public void RateCalculator() {
-		country = " ";
-		year = " ";
-	}
+		private String country;
+		private String year;
+		private double rate;
 
-	public CountryRate(String year, String country, double rate) {
-		this.country = country;
-		this.year = year;
-		this.rate = rate;
-	}
+		public CountryRate(String year, String country, double rate) {
+			this.country = country;
+			this.year = year;
+			this.rate = rate;
+		}
 
-	public CountryRate() {
-		// TODO Auto-generated constructor stub
-	}
+		public CountryRate() {
 
-	public String getYear() {
-		return year;
-	}
+		}
 
-	public void setYear(String year) {
-		this.year = year;
-	}
+		public String getYear() {
+			return year;
+		}
 
-	public String getCountry() {
-		return country;
-	}
+		public void setYear(String year) {
+			this.year = year;
+		}
 
-	public void setCountry(String country) {
-		this.country = country;
-	}
+		public String getCountry() {
+			return country;
+		}
 
-	public double getRate() {
-		return rate;
-	}
+		public void setCountry(String country) {
+			this.country = country;
+		}
 
-	public void setRate(double rate) {
-		this.rate = rate;
-	}
+		public double getRate() {
+			return rate;
+		}
+
+		public void setRate(double rate) {
+			this.rate = rate;
+		}
 }
