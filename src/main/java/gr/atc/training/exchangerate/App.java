@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class App {
 	static ArrayList<CountryRate> lista = new ArrayList<CountryRate>(); // einai mia ArrayList pou periexei antikeimena
 																		// tou CountryRate h opoia
-	// onomazetai lista.prosvasimo apo olous stin klasi
+	// onomazetai lista.Prosvasimo apo olous stin klasi
 
 	public static void main(String[] args) {
 		if (args.length != 1) {
@@ -22,7 +22,7 @@ public class App {
 
 		Scanner input = new Scanner(System.in);// anoigei sundesi apo to pliktrologio
 		// arxikopoioume tin lista
-		utils u = new utils();
+		RateCalculator u = new RateCalculator();
 		u.readFile(path, lista); // kaloume ti methodo gia na diavasoume to arxeio
 		System.out.println(" Dwse Date "); // zitame apo to xristi na dwsei hmerominia
 		year = input.nextLine(); // tin diavazoume kai tin apothikeuoume

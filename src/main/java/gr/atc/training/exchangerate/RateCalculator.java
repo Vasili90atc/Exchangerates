@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class utils {
+public class RateCalculator {
 
 	public void readFile(String path, ArrayList<CountryRate> lista) {
 		// mia methodos gia na diavasw to arxeio kai na prostetw
