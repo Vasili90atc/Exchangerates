@@ -1,24 +1,36 @@
 package gr.atc.training.exchangerate;
 
 import java.io.BufferedReader;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import com.opencsv.CSVReader;
 
 public class RateCalculator {
 
 	public void readFile(String path, ArrayList<CountryRate> lista) {
 		// mia methodos gia na diavasw to arxeio kai na prostetw
 		// antikeimeno sto ArrayList
+		FileReader fileReader=null;
+		try {
+			
+			
+		
 		String line = "";// dilwsi metavlitwn
-		BufferedReader reader;// dilwsi eidikou tupou metavlitwn
+		BufferedReader reader = null;// dilwsi eidikou tupou metavlitwn
 		System.out.println(path);
 		try {
-			File f = new File(path);
-			reader = new BufferedReader(new InputStreamReader(new FileInputStream(f), "UTF-8"));// anoigei to arxeio
+				fileReader=new FileReader(path);
+		
+		}catch (FileNotFoundException e) {
+			
+		}
+		CSVReader rdr= new CSVReader(fileReader);// anoigei to arxeio
 			line = reader.readLine();// diavazw tin prwti grammi
 			while ((line = reader.readLine()) != null) { // diavazw to arxeio mexri na min exei alles grammes
 
@@ -38,6 +50,7 @@ public class RateCalculator {
 
 			}
 			reader.close();// kleinei tin sundesi me to arxeio
+	
 		} catch (FileNotFoundException e) {// try catch gia sfalmata
 			System.out.println("File not found");
 			e.printStackTrace();

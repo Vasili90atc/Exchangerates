@@ -7,6 +7,7 @@
   <groupId>gr.atc.training</groupId>
   <artifactId>exchangerate</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
 
   <name>exchangerate</name>
   <!-- FIXME change it to the project's website -->
@@ -32,7 +33,7 @@
     <groupId>com.opencsv</groupId>
     <artifactId>opencsv</artifactId>
     <version>4.1</version>
-</dependency>
+  </dependency>
 
 <dependency>
  <groupId>org.apache.poi</groupId>
@@ -46,7 +47,18 @@
  <version>5.2.0</version>
 </dependency>
 
+<dependency>
+        <groupId>com.loginradius.sdk</groupId>
+        <artifactId>java-sdk</artifactId>
+        <version>11.0.0</version>
+    </dependency>
+
+  	<dependency>
+  		<groupId>gr.atc.training</groupId>
+  		<artifactId>exchangetate</artifactId>
+  	</dependency>
   </dependencies>
+  
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
